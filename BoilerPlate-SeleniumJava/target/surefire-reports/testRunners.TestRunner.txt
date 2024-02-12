@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: testRunners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 95.38 s <<< FAILURE! -- in testRunners.TestRunner
+Form Submission.AC 5 and 6 - Once checked, the Applicant can submit the entire Application and a Success message box should be shown and Upon submission, the main ‘My Grants’ dashboard should show the Application under the ‘Processing’ tab -- Time elapsed: 94.51 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.xpath: //*[text()='Get new grant'] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.1', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/wc/x2v80zbs655...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62227}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62227/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2adf64d47af41ee954402aea250dc1db
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.pages.BaseClass.waitForElementToBeClickable(BaseClass.java:32)
+	at com.pages.LoginGBP.verifyGetNewGrant(LoginGBP.java:54)
+	at AppHooks.ApplicationHooks.loginToApp(ApplicationHooks.java:46)
+
